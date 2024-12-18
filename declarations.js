@@ -7,7 +7,7 @@ const obj = {
     undef : undefined
 }
 const nested = {
-    arr: arr,
+    arr :[4,undefined,'2'],
     obj :{
         str: obj.str,
         num : obj.num,
@@ -19,4 +19,3 @@ Object.freeze(obj);
 Object.freeze(arr);
 Object.freeze(nested)
 
-con
