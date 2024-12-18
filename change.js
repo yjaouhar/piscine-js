@@ -3,6 +3,7 @@ function get(key){
 return sourceObject[key]
 };
 function set(key, value){
-    return sourceObject[key]=value
+    sourceObject[key]=value
+    return value
 
 };
