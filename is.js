@@ -21,7 +21,7 @@
             return  Array.isArray(arr)
     };
     is.obj = function(obj){
-            return (obj!=null &&!is.arr&&typeof obj == "object" )
+            return (typeof obj == "object"&&obj!=null &&!is.arr(obj) )
     };
     is.fun = function(fun){
             return typeof fun=="function"
@@ -30,7 +30,6 @@
             return arg?true:false
     };
     is.falsy = function(falsy){
-            return !this.truthy(falsy)
+            return !is.truthy(falsy)
     };
-
 
