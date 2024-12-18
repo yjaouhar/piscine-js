@@ -14,6 +14,6 @@ function whisper(str){
 function capitalize(str){
     cap=str[0].toUpperCase()
     str.toLowerCase()
-        return cap+str.slice(1,5)
+        return cap+str.slice(1)
 };
 
