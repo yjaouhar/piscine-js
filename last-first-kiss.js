@@ -7,6 +7,6 @@
  };
 
 function kiss(arg){
-return [arg[0],arg[arg.length-1]]
+return [arg[arg.length-1],arg[0]]
 };
 
