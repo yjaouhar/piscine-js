@@ -15,7 +15,7 @@
             return typeof undef=="undefined"
     };
     is.def = function(def){
-            return (typeof def=="undefined" || def!=null)
+            return (typeof def!="undefined" && def!=null)
     };
     is.arr = function(arr){
             return  Array.isArray(arr)
