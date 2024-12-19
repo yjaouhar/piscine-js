@@ -4,7 +4,7 @@ function arrToSet(arr){
 };
 
 function arrToStr(arr){
-    return arr.join(" ")
+    return arr.join("")
 };
 function setToArr(set){
 return Array.from(set)
@@ -60,3 +60,5 @@ function superTypeOf(typ){
     let val = (typeof typ)
     return val[0].toUpperCase()+val.slice(1)
 };
+
+
