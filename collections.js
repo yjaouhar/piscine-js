@@ -11,10 +11,10 @@ return Array.from(set)
 };
 function setToStr(set){
     const str = setToArr(set);
-    return str.join(" ")
+    return str.join("")
 };
 function strToArr(str){
-    return str.split(" ")
+    return str.split("")
 };
 function strToSet(str){
     return new Set(strToArr(str))
@@ -62,3 +62,4 @@ function superTypeOf(typ){
 };
 
 
+console.log(setToArr(new Set([1, "ctx", 3])));
