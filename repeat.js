@@ -5,3 +5,4 @@ function repeat(str,num){
     }
     return rep
 };
+
