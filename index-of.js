@@ -24,7 +24,7 @@ function lastIndexOf(arr,val,from){
 return -1
 };
 
-function includes(arr){
+function includes(arr,val){
     for (let i = 0; i < arr.length; i++) {
         if (arr[i]==val){
             return true   
