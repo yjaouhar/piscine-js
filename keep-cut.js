@@ -45,8 +45,9 @@ function keepFirstLast(str){
     let keep1 = ""
     let keep2 = ""
     keep1 = keepFirst(str)
-    keep2 =keepLast(str)
-    return keep1+keep2
+    keep2 =cutFirst(str)
+    return keep1+keepLast(keep2)
 };
+
 
 
