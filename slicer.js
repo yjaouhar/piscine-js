@@ -28,6 +28,10 @@ function slice(arr,from,ending){
             res+=arr[i]  
         }
     } 
+    if (Array.isArray(arr)){
+        res=res.split("")
+    }
     return res
 };
+
 
