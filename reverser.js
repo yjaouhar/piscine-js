@@ -1,10 +1,12 @@
 function reverse(arr){
-    let str=""
+    let str=[]
     for (let i = arr.length-1; i >=0 ; i--) {
-        str+=arr[i]
+        str.push(arr[i])
         
     }
-    return str
+    if (Array.isArray(arr)){
+        return str
+    };
+return str.join("")
 };
-
 
