@@ -29,7 +29,7 @@ function split(str, sep) {
     if (typeof sep === "undefined") {
         arr.push(str)
     } else {
-        for (let i = 0; i <= str.length; i++) {
+        for (let i = 0; i < str.length; i++) {
             if (sep === "") {
                 if (str[i] !== " ") {
                     arr.push(str[i])
