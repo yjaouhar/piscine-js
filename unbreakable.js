@@ -35,8 +35,6 @@ function split(str, sep) {
                     arr.push(str[i])
                 }
             } else {
-
-                console.log("=====|",(str.slice(i, i + sep.length)),"|=====");
                 if ((str.slice(i, i + sep.length) === sep)) {
                     arr.push(sl)
                     sl = ""
