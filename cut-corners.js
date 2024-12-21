@@ -61,7 +61,7 @@ function trunc(num){
     if (num<0){
        
         num=-num
-        isN = true
+        isNeg = true
     }
     for (let i = 0; i <= num; i++) {
         n=i   
