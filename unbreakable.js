@@ -45,8 +45,13 @@ function split(str, sep) {
                if  (i===str.length-1){
                 arr.push(sl)
                }
+               
             }
         }
+        if (arr.length===0){
+            arr.push("")
+        }
+
     }
     return arr
 };
