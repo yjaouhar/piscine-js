@@ -1,74 +1,59 @@
-function round(arr){
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i]>0){
-                let res = sep(arr[i])
-                 let n = arr[i]-res
-
+function round(num){
+    if (num-trunc(num)!==0){
+        if (num>=0){
+                let res = trunc(num)
+                 let n = num-res 
             if (n<0.5){
-                arr[i]=res
-            }else{
-                arr[i]=res+1
+                num=res
+            }else{ 
+                num=res+1
             }
         }else{
-            let res = sep(arr[i])
-            let n = res-arr[i]  
+            let res = trunc(num)
+            let n = res-num 
             if (n<=0.5){
-                arr[i]=res
+                num=res
             }else{
-                arr[i]=res-1
+                
+                num=res-1
             }
         }
     }
-
-return arr
+return num
 };
 
-
-function trunc(arr){
-
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i]>0){
-            let res = sep(arr[i])
-            arr[i]=res
+function floor(num){
+    if (num-trunc(num)!==0){
+        if (num>0){
+            let res = trunc(num)
+            num=res
         }else{
-            let res = sep(arr[i])
-            arr[i]=res
+            let res = trunc(num)
+            num=res-1
         }
     }
-return arr
+return num
 };
-
-function floor(arr){
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i]>0){
-            let res = sep(arr[i])
-            arr[i]=res
+function ceil(num){
+    if (num-trunc(num)!==0){
+         if (num>0){
+            let res = trunc(num)
+            num=res+1
         }else{
-            let res = sep(arr[i])
-            arr[i]=res-1
-        }
+            let res = trunc(num)
+            num=res
+         }
     }
-return arr
-};
-function ceil(arr){
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i]>0){
-            let res = sep(arr[i])
-            arr[i]=res+1
-        }else{
-            let res = sep(arr[i])
-            arr[i]=res
-        }
-        
-    }
-return arr
+       
+return num
 };
 
-
-
-function sep(num){
+function trunc(num){
     let n=0
     let isN = false
+    if (num===-Infinity || num===+Infinity){
+        return num
+    }
     if (num<0){
        
         num=-num
