@@ -55,16 +55,19 @@ function trunc(num){
     if (num===-Infinity || num===+Infinity){
         return num
     }
-    if (num>=100000000){
-        return num
-    }
     if (num<0){
-       
         num=-num
         isNeg = true
     }
-    for (let i = 0; i <= num; i++) {
-        n=i   
+    let div = 100000
+    
+    for (let i = 0;  num>=1; i++) {
+        if (num>=div){
+            n+= div
+            num-= div
+        }else{
+            div/=10
+        }   
     }
     if (isNeg===true){
         n=-n
