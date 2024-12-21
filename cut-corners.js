@@ -50,8 +50,12 @@ return num
 
 function trunc(num){
     let n=0
-    let isN = false
+    let isNeg = false
+
     if (num===-Infinity || num===+Infinity){
+        return num
+    }
+    if (num>=100000000){
         return num
     }
     if (num<0){
@@ -62,8 +66,9 @@ function trunc(num){
     for (let i = 0; i <= num; i++) {
         n=i   
     }
-    if (isN===true){
+    if (isNeg===true){
         n=-n
     }
     return n
 };
+
