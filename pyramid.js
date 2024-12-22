@@ -22,4 +22,8 @@ function pyramid(sep, n) {
 };
 
 
+console.log(pyramid("{}",12));
+
+
+
 
