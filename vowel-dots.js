@@ -9,3 +9,7 @@ function vowelDots(str) {
     }
     return st
 }
+let rg = /s/;
+let text = "somsethsing";
+let arr=text.match(rg)
+console.log(arr);
