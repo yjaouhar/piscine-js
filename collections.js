@@ -62,4 +62,4 @@ function superTypeOf(typ){
 };
 
 
-console.log(setToArr(new Set([1, "ctx", 3])));
+console.log(objToArr({ f: 5, __proto__: { d: 6 } }), { 5: 'f' });

@@ -24,4 +24,3 @@ function flatMap(arr, func) {
     return slr
 }
 
-
